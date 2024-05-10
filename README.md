@@ -1,7 +1,9 @@
 Wasm Module for Apollo Service
 ==============================
 
-This is a simple example of a Wasm module that can be used with Apollo Service.
+This is a simple example of a Wasm module that can be used with [Apollo Service](https://github.com/datafast-network/df-apollo).
+
+
 
 ## Usage
 ```bash
