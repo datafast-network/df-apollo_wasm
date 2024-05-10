@@ -6,7 +6,7 @@
     "clean": "rm -rf build",
     "build": "pnpm clean && asc --config asconfig.json --target release",
     "build:debug": "pnpm clean && asc --config asconfig.json --target debug",
-    "generate": "protoc --plugin=protoc-gen-as=./node_modules/.bin/as-proto-gen --as_out=. model.proto"
+    "build:schema": "protoc --plugin=protoc-gen-as=./node_modules/.bin/as-proto-gen --as_out=. model.proto"
   },
   "keywords": [],
   "author": "",
