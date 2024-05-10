@@ -1,0 +1,22 @@
+{
+  "entries": [
+    "./src/index.ts"
+  ],
+  "options": {
+    "sourceMap": true
+  },
+  "targets": {
+    "release": {
+      "optimize": true,
+      "baseDir": "build/release/",
+      "outFile": "build/release/test.wasm",
+      "textFile": "build/release/test.wat"
+    },
+    "debug": {
+      "debug": true,
+      "baseDir": "build/debug/",
+      "outFile": "build/debug/test.wasm",
+      "textFile": "build/debug/test.wat"
+    }
+  }
+}
