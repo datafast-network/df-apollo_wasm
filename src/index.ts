@@ -1,7 +1,9 @@
-import {JSONValue, log} from "@graphprotocol/graph-ts";
-import {TestEvent} from "../model/TestEvent";
+import {json, JSONValue, log} from "@graphprotocol/graph-ts";
 import {Protobuf} from "as-proto/assembly";
+import {TestEvent} from "./types/model/TestEvent";
+import {handleRequest} from "./http_client_test";
 
+export {handleRequest};
 export function testLogInfo(message: string): void {
     log.info(message, []);
 }

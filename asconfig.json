@@ -1,9 +1,12 @@
 {
   "entries": [
-    "./src/index.ts"
+    "./src/index.ts",
+    "node_modules/@graphprotocol/graph-ts/global/global.ts"
   ],
   "options": {
-    "sourceMap": true
+    "sourceMap": false,
+    "exportRuntime": true,
+    "runtime": "stub"
   },
   "targets": {
     "release": {

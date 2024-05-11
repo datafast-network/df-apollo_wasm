@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message Time {
+  string updated = 1;
+  string updatedISO = 2;
+  string updateduk = 3;
+}
+
+message Currency {
+  string code = 1;
+  string symbol = 2;
+  string rate = 3;
+  string description = 4;
+  double rate_float = 5;
+}
+
+message BitcoinData {
+  Time time = 1;
+  string disclaimer = 2;
+  string chartName = 3;
+  map<string, Currency> bpi = 4;
+}
