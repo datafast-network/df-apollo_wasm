@@ -5,6 +5,7 @@
 # list all proto files in the proto directory
 proto_files=$(find proto -name "*.proto")
 
+mkdir -p src/types
 # loop through all proto files
 
 for file in $proto_files

@@ -10,19 +10,6 @@ enum Method {
   PATCH = 4;
 }
 
-enum AuthType {
-  NONE = 0;
-  BASIC = 1;
-  BEARER = 2;
-}
-
-message Auth {
-  AuthType type = 1;
-  optional string token = 2;
-  optional string username = 3;
-  optional string password = 4;
-}
-
 message Header {
   string key = 1;
   string value = 2;
@@ -37,8 +24,7 @@ enum ResponseType {
 message Request {
   Method method = 1;
   string endpoint = 2;
-  optional Auth auth = 3;
-  optional bytes body = 4;
-  repeated Header headers = 5;
-  ResponseType response_type = 6;
+  optional bytes body = 3;
+  repeated Header headers = 4;
+  ResponseType response_type = 5;
 }
